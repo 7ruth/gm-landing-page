@@ -138,7 +138,7 @@ async function publish({
     // Attempt to pull latest from deciphernow. This will error out if the user
     // running this script isn't logged into DockerHub or isn't actually
     // a member of the DecipherNow organization
-    await execWrapper("docker pull deciphernow/gm-landing-page");
+    // await execWrapper("docker pull deciphernow/gm-landing-page");
     console.log(`Login Validated`);
     console.log("It looks like you want to push up the following tags:");
     console.log("deciphernow/gm-landing-page:latest");
