@@ -8,6 +8,7 @@
 
 # production
 /build
+/docker-prod/server/node_modules
 
 # misc
 .DS_Store
