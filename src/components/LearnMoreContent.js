@@ -94,7 +94,7 @@ function LearnMoreContent() {
         <Content>
           <SectionContent>
             <SectionTitle>Fabric</SectionTitle>
-            <p>[FABRIC CONTENT NEEDED]</p>
+            <p>Fabric allows microservices to stay micro by handling the nuances and complexity required by a reliable and scalable microservice architecture, leaving encapsulated business logic to you.</p>
             <ul>
               <li>Wraps legacy services</li>
               <li>Independent per-service scaling</li>
@@ -110,7 +110,9 @@ function LearnMoreContent() {
             <SectionTitle>Data</SectionTitle>
             <p>Data provides API, filesystem, and encryption layers atop pluggable storage backends, such as Amazon AWS S3. Encryption keys are stored such that the compromise of a single machine is insufficient to decrypt any data, compromises cannot spread between objects, users never have direct possession of object keys, and yet authorized emergency decryption remains possible. Sharing is cryptographically enforced. Data serves as the data hub of Grey Matter.</p>
             <ul>
-              <li>[DATA CONTENT NEEDED]</li>
+              <li>Secure by design</li>
+              <li>Distributes to the network edge</li>
+              <li>Provides granular access permissions</li>
             </ul>
           </SectionContent>
         </Content>
@@ -120,9 +122,11 @@ function LearnMoreContent() {
         <Content>
           <SectionContent>
             <SectionTitle>Sense</SectionTitle>
-            <p>[SENSE CONTENT NEEDED]</p>
+            <p>Sense is a context-aware visualization and monitoring framework designed to flexibly integrate current, experimental, and even unforeseeable future developments in data analytics, machine learning, and artificial intelligence.</p>
             <ul>
-              <li>[SENSE CONTENT NEEDED]</li>
+              <li>Enables microservice telemetry to build out complex AI to manage the network itself</li>
+              <li>Manifests event-driven pipelines and data flows in support of data insights, contextual cues, and analytics.</li>
+              <li>Automates service-level agreements</li>
             </ul>
           </SectionContent>
         </Content>
