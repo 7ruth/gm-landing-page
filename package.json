@@ -1,5 +1,5 @@
 {
-  "name": "landing-page",
+  "name": "gm-landing-page",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-docker": "docker build -t deciphernow/gm-landing-page -f docker-prod/Dockerfile .",
+    "publish": "node scripts/publish.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "commander": "^2.15.1",
+    "prompt": "^1.0.0"
   }
 }
