@@ -1,6 +1,6 @@
 {
   "name": "gm-landing-page",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "gm-react-scripts": "0.1.0",
