@@ -32,7 +32,7 @@ const Feature = styled.div`
 const FeatureTitle = styled.h2`
   color: #2FBE4C;
   margin: 32px 0 4px;
-  padding: 0 64px;
+  padding: 0 8px;
   font-weight: 600;
   font-size: 32px;
   line-height: 1.1;
@@ -70,6 +70,7 @@ const FeatureRound = styled.div`
     position: absolute;
     width: calc(((100vw / 3) - 32px));
     max-width: 478px;
+    min-width: 300px;
     left: 50%;
     height: 1.5px;
     top: calc(100% - 2px);
