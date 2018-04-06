@@ -102,7 +102,7 @@ function LearnMoreContent() {
             </ul>
           </SectionContent>
         </Content>
-        <Diagram><img src={FabricDiagram} style={{ maxWidth: '448px' }} /></Diagram>
+        <Diagram><img alt="" src={FabricDiagram} style={{ maxWidth: '448px' }} /></Diagram>
       </Section>
       <Section>
         <Content>
@@ -116,7 +116,7 @@ function LearnMoreContent() {
             </ul>
           </SectionContent>
         </Content>
-        <Diagram><img src={DataDiagram} style={{ maxWidth: '534px' }} /></Diagram>
+        <Diagram><img alt="" src={DataDiagram} style={{ maxWidth: '534px' }} /></Diagram>
       </Section>
       <Section>
         <Content>
@@ -130,7 +130,7 @@ function LearnMoreContent() {
             </ul>
           </SectionContent>
         </Content>
-        <Diagram><img src={SenseDiagram} style={{ maxWidth: '323px' }} /></Diagram>
+        <Diagram><img alt="" src={SenseDiagram} style={{ maxWidth: '323px' }} /></Diagram>
       </Section>
     </Article>
   );

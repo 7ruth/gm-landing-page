@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Metropolis400 from "./assets/metropolis/Metropolis-Regular.otf";
 import Metropolis600 from "./assets/metropolis/Metropolis-SemiBold.otf";
@@ -7,7 +6,6 @@ import Metropolis600 from "./assets/metropolis/Metropolis-SemiBold.otf";
 import AppMainWrapper from "./components/AppMainWrapper";
 import AppWrapper from "./components/AppWrapper";
 import AppHeader from "./components/AppHeader";
-import Navigation from "./components/Navigation";
 import PageHeader from "./components/PageHeader";
 import LinksCollection from "./components/LinksCollection";
 import OffsiteLinks from "./components/OffsiteLinks";

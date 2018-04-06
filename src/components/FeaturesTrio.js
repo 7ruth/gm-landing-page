@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 
-const WidgetA = require('../assets/widget-a.svg')
-const WidgetB = require('../assets/widget-b.svg')
-const WidgetC = require('../assets/widget-c.svg')
 
 const TrioWrapper = styled.div`
   margin: 0 auto;
@@ -13,36 +10,6 @@ const TrioWrapper = styled.div`
   display: flex;
   flex-direction: row;
   text-align: center;
-`;
-
-const Feature = styled.div`
-  color: #fff;
-  margin-right: 16px;
-  flex: 0 0 calc(33%);
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:last-child > ${FeatureRound}:after {
-    content: none;
-  }
-`;
-
-const FeatureTitle = styled.h2`
-  color: #2FBE4C;
-  margin: 32px 0 4px;
-  padding: 0 8px;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.1;
-`;
-
-const FeatureBody = styled.p`
-  margin: 0 auto;
-  font-weight: 600;
-  max-width: 400px;
-  padding: 0 8px;
 `;
 
 const FeatureRound = styled.div`
@@ -77,6 +44,36 @@ const FeatureRound = styled.div`
     background-color: #2FBE4C;
     z-index: 0;
   }
+`;
+
+const Feature = styled.div`
+  color: #fff;
+  margin-right: 16px;
+  flex: 0 0 calc(33%);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:last-child > ${FeatureRound}:after {
+    content: none;
+  }
+`;
+
+const FeatureTitle = styled.h2`
+  color: #2FBE4C;
+  margin: 32px 0 4px;
+  padding: 0 8px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.1;
+`;
+
+const FeatureBody = styled.p`
+  margin: 0 auto;
+  font-weight: 600;
+  max-width: 400px;
+  padding: 0 8px;
 `;
 
 function FeaturesTrio() {
