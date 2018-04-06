@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="42px" viewBox="0 0 72 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>widget c</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="2.5" cy="2.5" r="2.5"></circle>
+        <circle id="path-2" cx="2.5" cy="2.5" r="2.5"></circle>
+        <circle id="path-3" cx="2.5" cy="2.5" r="2.5"></circle>
+        <circle id="path-4" cx="36" cy="20" r="12"></circle>
+    </defs>
+    <g id="widget-c" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dingus" transform="translate(42.500000, 30.500000) rotate(236.000000) translate(-42.500000, -30.500000) translate(30.000000, 28.000000)">
+            <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 25 2 25 3"></polygon>
+            <g id="Oval-3">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use fill="#2FBE4C" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+            </g>
+        </g>
+        <g id="dingus" transform="translate(51.000000, 11.500000) rotate(150.000000) translate(-51.000000, -11.500000) translate(33.000000, 9.000000)">
+            <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 36 2 36 3"></polygon>
+            <g id="Oval-3">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <use fill="#2FBE4C" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+            </g>
+        </g>
+        <g id="dingus" transform="translate(18.000000, 15.500000) rotate(16.000000) translate(-18.000000, -15.500000) translate(0.000000, 13.000000)">
+            <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 36 2 36 3"></polygon>
+            <g id="Oval-3">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <use fill="#2FBE4C" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+            </g>
+        </g>
+        <g id="Oval">
+            <use fill="#000000" fill-rule="evenodd" xlink:href="#path-4"></use>
+            <circle stroke="#2FBE4C" stroke-width="2" cx="36" cy="20" r="11"></circle>
+        </g>
+    </g>
+</svg>

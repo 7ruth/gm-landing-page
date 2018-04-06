@@ -5,10 +5,9 @@ const AppWrapper = styled.div`
   flex-direction: column;
   flex-wrap: no-wrap;
   height: 100%;
-  text-align: center;
-  & h1 {
-    font-size: 1.5em;
-  }
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Avenir Next W01', Avenir Next, Metropolis, --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `;
 
 export default AppWrapper;

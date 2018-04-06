@@ -6,7 +6,12 @@ import Metropolis600 from "./assets/metropolis/Metropolis-SemiBold.otf";
 
 import AppMainWrapper from "./components/AppMainWrapper";
 import AppWrapper from "./components/AppWrapper";
+import AppHeader from "./components/AppHeader";
 import Navigation from "./components/Navigation";
+import PageHeader from "./components/PageHeader";
+import LinksCollection from "./components/LinksCollection";
+import OffsiteLinks from "./components/OffsiteLinks";
+import LearnMoreContent from './components/LearnMoreContent';
 
 import { AppFooter } from "gm-ui-components";
 
@@ -16,15 +21,12 @@ class App extends Component {
   render() {
     return (
       <AppWrapper>
-        <Navigation />
         <AppMainWrapper>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Grey Matter Starter App</h1>
-          </header>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          <AppHeader />
+          <PageHeader />
+          <LinksCollection />
+          <OffsiteLinks />
+          <LearnMoreContent />
         </AppMainWrapper>
         <AppFooter />
       </AppWrapper>
