@@ -72,7 +72,7 @@ const FeatureTitle = styled.h2`
 const FeatureBody = styled.p`
   margin: 0 auto;
   font-weight: 600;
-  max-width: 400px;
+  max-width: 350px;
   padding: 0 8px;
 `;
 

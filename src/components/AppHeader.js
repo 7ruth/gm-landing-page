@@ -7,12 +7,14 @@ const AppHeaderWrap = styled.div`
   padding: 4px;
 `;
 
-const Brand = styled.a`
+const Brand = styled.div`
   color: #fff;
   font-size: 12px;
   letter-spacing: .03em;
   font-weight: 600;
   padding: 4px;
+  max-width: calc(1400px - (64px * 2));
+  margin: 0 auto;
   display: flex;
   align-items: center;
   text-transform: uppercase;

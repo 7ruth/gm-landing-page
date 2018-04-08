@@ -7,7 +7,7 @@ import Mesh from '../assets/mesh.jpg';
 const Header = styled.header`
   background-color: black;
   color: #fff;
-  padding: 64px 64px 80px;
+  padding: 64px 32px 80px;
   background-image: url('${Mesh}');
   background-size: 100% auto;
   background-position: right -50% center;
@@ -18,13 +18,15 @@ const SiteTitle = styled.h1`
   font-size: 72px;
   margin: 0 auto;
   font-weight: 600;
-  max-width: 1400px;
+  padding: 0 32px;
+  max-width: calc(1400px - (32px * 2));
 `;
 
 const HeaderSubLine = styled.p`
   font-weight: 600;
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: calc(1400px - (32px * 2));
+  padding: 0 32px;
 `;
 
 function PageHeader() {

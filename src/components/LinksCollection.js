@@ -11,7 +11,6 @@ const Section = styled.section`
   font-weight: 600;
   display: flex;
   padding: 32px 64px;
-  border-radius: 16px;
 `;
 
 const SectionHeading = styled.h2`
@@ -41,7 +40,6 @@ const SectionLink = styled.li`
   padding: 4px 0;
 
   a {
-    text-decoration: underline;
     color: inherit;
 
     &:hover {
@@ -53,7 +51,7 @@ const SectionLink = styled.li`
 function LinksCollection() {
   return (
     <SectionWrapper>
-      <Section style={{ backgroundColor: 'rgba(0, 171, 42, 0.1', paddingTop: '32px' }}>
+      <Section>
         <SectionHeading>Grey Matter</SectionHeading>
         <SectionContent>
           <SectionLink><a href="https://demo.deciphernow.com/dashboard/">Grey Matter Dashboard</a></SectionLink>
