@@ -14,7 +14,7 @@ const TrioWrapper = styled.div`
 
 const FeatureRound = styled.div`
   font-size: 32px;
-  color: #2FBE4C;
+  color: #00ab2a;
   font-weight: 400;
   line-height: 0;
   position: relative;
@@ -35,13 +35,14 @@ const FeatureRound = styled.div`
   &:after {
     content: '';
     position: absolute;
-    width: calc(((100vw / 3) - 32px));
-    max-width: 478px;
-    min-width: 300px;
+    width: calc(((100vw / 3) - 7px));
+    max-width: 388px;
+    min-width: 313px;
     left: 50%;
     height: 1.5px;
     top: calc(100% - 2px);
-    background-color: #2FBE4C;
+    background-color: #00ab2a;
+    opacity: 0.3;
     z-index: 0;
   }
 `;
@@ -50,6 +51,7 @@ const Feature = styled.div`
   color: #fff;
   margin-right: 16px;
   flex: 0 0 calc(33%);
+  position: relative;
 
   &:last-child {
     margin-right: 0;
@@ -58,10 +60,24 @@ const Feature = styled.div`
   &:last-child > ${FeatureRound}:after {
     content: none;
   }
+
+  &:after { 
+    content: '';
+    position: absolute;
+    top: 2em;
+    right: 1em;
+    bottom: -0.5em;
+    left: 1em;
+    background-color: #000;
+    filter: blur(12px);
+    opacity: 0.6;
+    border-radius: 100%;
+    z-index: -1;
+  }
 `;
 
 const FeatureTitle = styled.h2`
-  color: #2FBE4C;
+  color: #00ab2a;
   margin: 32px 0 4px;
   padding: 0 8px;
   font-weight: 600;
@@ -73,6 +89,7 @@ const FeatureBody = styled.p`
   margin: 0 auto;
   font-weight: 600;
   max-width: 350px;
+  line-height: 1.4;
   padding: 0 8px;
 `;
 
@@ -90,34 +107,34 @@ function FeaturesTrio() {
               <circle id="path-4" cx="31" cy="17" r="12"></circle>
             </defs>
             <g id="widget-a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Group" transform="translate(4.000000, 3.000000)">
-                <g id="dingus" transform="translate(16.500000, 10.500000) rotate(21.000000) translate(-16.500000, -10.500000) translate(0.000000, 8.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 33 2 33 3"></polygon>
+              <g id="Group" transform="translate(4, 3)">
+                <g id="dingus" transform="translate(16.5, 10.5) rotate(21) translate(-16.5, -10.5) translate(0, 8)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 33 2 33 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-1"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-1"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-1"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
-                <g id="dingus" transform="translate(38.500000, 9.500000) rotate(137.000000) translate(-38.500000, -9.500000) translate(28.000000, 7.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 21 2 21 3"></polygon>
+                <g id="dingus" transform="translate(38.5, 9.5) rotate(137) translate(-38.5, -9.5) translate(28, 7)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 21 2 21 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-2"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-2"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-2"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
-                <g id="dingus" transform="translate(44.000000, 22.500000) rotate(204.000000) translate(-44.000000, -22.500000) translate(30.000000, 20.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 28 2 28 3"></polygon>
+                <g id="dingus" transform="translate(44, 22.5) rotate(204) translate(-44, -22.5) translate(30, 20)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 28 2 28 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-3"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
                 <g id="Oval">
                   <use fill="#000000" fill-rule="evenodd" xlinkHref="#path-4"></use>
-                  <circle stroke="#2FBE4C" stroke-width="2" cx="31" cy="17" r="11"></circle>
+                  <circle stroke="#00ab2a" stroke-width="2" cx="31" cy="17" r="11"></circle>
                 </g>
               </g>
             </g>
@@ -139,34 +156,34 @@ function FeaturesTrio() {
               <circle id="path-4" cx="31" cy="17" r="12"></circle>
             </defs>
             <g id="widget-a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Group" transform="translate(4.000000, 3.000000)">
-                <g id="dingus" transform="translate(16.500000, 10.500000) rotate(21.000000) translate(-16.500000, -10.500000) translate(0.000000, 8.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 33 2 33 3"></polygon>
+              <g id="Group" transform="translate(4, 3)">
+                <g id="dingus" transform="translate(16.5, 10.5) rotate(21) translate(-16.5, -10.5) translate(0, 8)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 33 2 33 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-1"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-1"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-1"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
-                <g id="dingus" transform="translate(38.500000, 9.500000) rotate(137.000000) translate(-38.500000, -9.500000) translate(28.000000, 7.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 21 2 21 3"></polygon>
+                <g id="dingus" transform="translate(38.5, 9.5) rotate(137) translate(-38.5, -9.5) translate(28, 7)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 21 2 21 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-2"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-2"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-2"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
-                <g id="dingus" transform="translate(44.000000, 22.500000) rotate(204.000000) translate(-44.000000, -22.500000) translate(30.000000, 20.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 28 2 28 3"></polygon>
+                <g id="dingus" transform="translate(44, 22.5) rotate(204) translate(-44, -22.5) translate(30, 20)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 28 2 28 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-3"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
                 <g id="Oval">
                   <use fill="#000000" fill-rule="evenodd" xlinkHref="#path-4"></use>
-                  <circle stroke="#2FBE4C" stroke-width="2" cx="31" cy="17" r="11"></circle>
+                  <circle stroke="#00ab2a" stroke-width="2" cx="31" cy="17" r="11"></circle>
                 </g>
               </g>
             </g>
@@ -187,34 +204,34 @@ function FeaturesTrio() {
               <circle id="path-4" cx="31" cy="17" r="12"></circle>
             </defs>
             <g id="widget-a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Group" transform="translate(4.000000, 3.000000)">
-                <g id="dingus" transform="translate(16.500000, 10.500000) rotate(21.000000) translate(-16.500000, -10.500000) translate(0.000000, 8.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 33 2 33 3"></polygon>
+              <g id="Group" transform="translate(4, 3)">
+                <g id="dingus" transform="translate(16.5, 10.5) rotate(21) translate(-16.5, -10.5) translate(0, 8)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 33 2 33 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-1"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-1"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-1"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
-                <g id="dingus" transform="translate(38.500000, 9.500000) rotate(137.000000) translate(-38.500000, -9.500000) translate(28.000000, 7.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 21 2 21 3"></polygon>
+                <g id="dingus" transform="translate(38.5, 9.5) rotate(137) translate(-38.5, -9.5) translate(28, 7)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 21 2 21 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-2"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-2"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-2"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
-                <g id="dingus" transform="translate(44.000000, 22.500000) rotate(204.000000) translate(-44.000000, -22.500000) translate(30.000000, 20.000000)">
-                  <polygon id="Line" fill="#2FBE4C" fill-rule="nonzero" points="3 3 3 2 28 2 28 3"></polygon>
+                <g id="dingus" transform="translate(44, 22.5) rotate(204) translate(-44, -22.5) translate(30, 20)">
+                  <polygon id="Line" fill="#00ab2a" fill-rule="nonzero" points="3 3 3 2 28 2 28 3"></polygon>
                   <g id="Oval-3">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                    <use fill="#2FBE4C" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                    <circle stroke="#2FBE4C" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
+                    <use fill="#00ab2a" fill-rule="evenodd" xlinkHref="#path-3"></use>
+                    <circle stroke="#00ab2a" stroke-width="1" cx="2.5" cy="2.5" r="2"></circle>
                   </g>
                 </g>
                 <g id="Oval">
                   <use fill="#000000" fill-rule="evenodd" xlinkHref="#path-4"></use>
-                  <circle stroke="#2FBE4C" stroke-width="2" cx="31" cy="17" r="11"></circle>
+                  <circle stroke="#00ab2a" stroke-width="2" cx="31" cy="17" r="11"></circle>
                 </g>
               </g>
             </g>

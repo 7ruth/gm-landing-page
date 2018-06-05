@@ -1,5 +1,7 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
+
+import Section from './section.js';
 
 import FabricDiagram from '../assets/diagram-gm-fabric.png';
 import SenseDiagram from '../assets/diagram-gm-sense.png';
@@ -17,11 +19,12 @@ const ArticleHeader = styled.h2`
   margin: 0 0 32px;
 `;
 
-const Section = styled.section`
+const ArticleSection = styled.section`
   display: flex;
   flex-direction: row;
   padding: 32px 0;
   margin-bottom: 64px;
+  text-align: left;
 `;
 
 const SectionTitle = styled.h3`
@@ -88,51 +91,53 @@ const Diagram = styled.div`
 
 function LearnMoreContent() {
   return (
-    <Article>
-      <ArticleHeader>Learn more about Grey Matter</ArticleHeader>
-      <Section>
-        <Content>
-          <SectionContent>
-            <SectionTitle>Fabric</SectionTitle>
-            <p>Fabric allows microservices to stay micro by handling the nuances and complexity required by a reliable and scalable microservice architecture, leaving encapsulated business logic to you.</p>
-            <ul>
-              <li>Wraps legacy services</li>
-              <li>Independent per-service scaling</li>
-              <li>Accelerates delivery of new capabilities</li>
-            </ul>
-          </SectionContent>
-        </Content>
-        <Diagram><img alt="" src={FabricDiagram} style={{ maxWidth: '448px' }} /></Diagram>
-      </Section>
-      <Section>
-        <Content>
-          <SectionContent>
-            <SectionTitle>Data</SectionTitle>
-            <p>Data provides API, filesystem, and encryption layers atop pluggable storage backends, such as Amazon AWS S3. Encryption keys are stored such that the compromise of a single machine is insufficient to decrypt any data, compromises cannot spread between objects, users never have direct possession of object keys, and yet authorized emergency decryption remains possible. Sharing is cryptographically enforced. Data serves as the data hub of Grey Matter.</p>
-            <ul>
-              <li>Secure by design</li>
-              <li>Distributes to the network edge</li>
-              <li>Provides granular access permissions</li>
-            </ul>
-          </SectionContent>
-        </Content>
-        <Diagram><img alt="" src={DataDiagram} style={{ maxWidth: '534px' }} /></Diagram>
-      </Section>
-      <Section>
-        <Content>
-          <SectionContent>
-            <SectionTitle>Sense</SectionTitle>
-            <p>Sense is a context-aware visualization and monitoring framework designed to flexibly integrate current, experimental, and even unforeseeable future developments in data analytics, machine learning, and artificial intelligence.</p>
-            <ul>
-              <li>Enables microservice telemetry to build out complex AI to manage the network itself</li>
-              <li>Manifests event-driven pipelines and data flows in support of data insights, contextual cues, and analytics.</li>
-              <li>Automates service-level agreements</li>
-            </ul>
-          </SectionContent>
-        </Content>
-        <Diagram><img alt="" src={SenseDiagram} style={{ maxWidth: '323px' }} /></Diagram>
-      </Section>
-    </Article>
+    <Section backgroundColor="#fff" foregroundColor="#000" borderColor="#fafafa" noPadTop>
+      <Article>
+        <ArticleHeader>Learn more about Grey Matter</ArticleHeader>
+        <ArticleSection>
+          <Content>
+            <SectionContent>
+              <SectionTitle>Fabric</SectionTitle>
+              <p>The master control and data plane, managing the entire mesh platform within an Enterprise. Our control plane sets fleet-wide policies and controls which are enacted by the data plane offering unbounded knowledge and uncommon control.</p>
+              <ul>
+                <li>Wraps legacy services</li>
+                <li>Independent per-service scaling</li>
+                <li>Accelerates delivery of new capabilities</li>
+              </ul>
+            </SectionContent>
+          </Content>
+          <Diagram><img alt="" src={FabricDiagram} style={{ maxWidth: '448px' }} /></Diagram>
+        </ArticleSection>
+        <ArticleSection>
+          <Content>
+            <SectionContent>
+              <SectionTitle>Data</SectionTitle>
+              <p>Grey Matter Data is the highly secure Edge data distribution and content delivery network enabling Enterprise micro/nano-services to move secure, targeted data from service to service, across markets, and around the globe.</p>
+              <ul>
+                <li>Secure by design</li>
+                <li>Distributes to the network edge</li>
+                <li>Provides granular access permissions</li>
+              </ul>
+            </SectionContent>
+          </Content>
+          <Diagram><img alt="" src={DataDiagram} style={{ maxWidth: '534px' }} /></Diagram>
+        </ArticleSection>
+        <ArticleSection>
+          <Content>
+            <SectionContent>
+              <SectionTitle>Sense</SectionTitle>
+              <p>The Final Frontier of true network operations AI. Grey Matter Sense extends network situational awareness through the surface, conversion, process, and summarization of relevant information derived from dynamic neural network and machine learning algorithms, providing data-driven context to the Enterprise.</p>
+              <ul>
+                <li>Enables microservice telemetry to build out complex AI to manage the network itself</li>
+                <li>Manifests event-driven pipelines and data flows in support of data insights, contextual cues, and analytics.</li>
+                <li>Automates service-level agreements</li>
+              </ul>
+            </SectionContent>
+          </Content>
+          <Diagram><img alt="" src={SenseDiagram} style={{ maxWidth: '323px' }} /></Diagram>
+        </ArticleSection>
+      </Article>
+    </Section>
   );
 }
 

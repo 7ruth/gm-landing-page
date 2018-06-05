@@ -17,6 +17,7 @@ const Header = styled.header`
 const SiteTitle = styled.h1`
   font-size: 72px;
   margin: 0 auto;
+  text-align: center;
   font-weight: 600;
   padding: 0 32px;
   max-width: calc(1400px - (32px * 2));
@@ -24,6 +25,7 @@ const SiteTitle = styled.h1`
 
 const HeaderSubLine = styled.p`
   font-weight: 600;
+  text-align: center;
   margin: 0 auto;
   max-width: calc(1400px - (32px * 2));
   padding: 0 32px;

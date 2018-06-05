@@ -11,13 +11,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build-docker":
-      "docker build -t deciphernow/gm-landing-page -f docker-prod/Dockerfile .",
+    "build-docker": "docker build -t deciphernow/gm-landing-page -f docker-prod/Dockerfile .",
     "publish": "node scripts/publish.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "color": "^3.0.0",
     "commander": "^2.15.1",
     "prompt": "^1.0.0"
   }
