@@ -19,6 +19,7 @@ const PDFLinkWrap = styled.a`
   display: flex;
   flex-direction: column;
   transition: all .15s ease;
+  flex: 1 1;
 
   > *{ 
     position: relative;
