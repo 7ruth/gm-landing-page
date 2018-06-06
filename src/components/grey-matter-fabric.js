@@ -40,7 +40,6 @@ export default class GreyMatterFabric extends React.Component {
                 <li key={b}>{b}</li>
               ))}
             </ul>
-            <p><Button href="https://github.com/DecipherNow/gm-fabric-jvm">Browse the code</Button></p>
           </div>
           <Gallery shadow rounded>
             <img src='https://s3.amazonaws.com/decipher-public/grey-matter/screenshots/fabric-sorted-status.png' alt="Fabric Dashboard" />
