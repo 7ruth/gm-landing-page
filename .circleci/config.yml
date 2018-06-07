@@ -7,13 +7,18 @@
 defaults: &defaults
   working_directory: ~/repo
   environment:
-    # CC_TEST_REPORTER_ID: f4edd2fa22298cef102b509ee91b82b931b9e1cc6dd45a561efc4fbf86a34922
+    # CC_TEST_REPORTER_ID:
     TZ: /usr/share/zoneinfo/America/New_York
   docker:
     - image: circleci/node:carbon
 
 version: 2
 jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: echo "A first hello"
   setup:
     <<: *defaults
     steps:
@@ -59,18 +64,30 @@ jobs:
             # issues installing lint-css
             command: |
               npm run lint-js -- --max-warnings=0
-  # build:
-  #   <<: *defaults
-  #   steps:
-  #     - checkout
-  #     - run: echo "A first hello"
+  test:unit:
+      <<: *defaults
+      steps:
+        - checkout
+        - attach_workspace:
+            at: ~/repo
+        # CircleCI 2.0 no longer allows interpolation of env variables. This is the workaround:
+        # https://discuss.circleci.com/t/using-environment-variables-in-config-yml-not-working/14237
+        - run:
+            name: Run tests
+            # split tests by timing and then run npm test
+            command: npm test
 
-  workflows:
-    version: 2
-    setup-and-lint:
+# Define a workflow to specify the run order of jobs
+# More info at https://circleci.com/docs/2.0/workflows/
+workflows:
+  version: 2
+  setup-and-lint:
       jobs:
         - setup
         - test:linters:
+            requires:
+              - setup
+        - test:unit:
             requires:
               - setup
 
